@@ -74,3 +74,8 @@ sudo systemctl daemon-reload
 sudo systemctl start prometheus
 sudo systemctl enable prometheus
 ```
+
+
+## grafana
+
+you need to add data source and afther that import dashboard 9628
