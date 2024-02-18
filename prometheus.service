@@ -6,6 +6,7 @@ After=network-online.target
 [Service]
 Type=simple
 Restart=always
+WorkingDirectory=/opt/prometheus
 ExecStart=/usr/local/bin/prometheus \
     --config.file /opt/prometheus/prometheus.yml \
 
