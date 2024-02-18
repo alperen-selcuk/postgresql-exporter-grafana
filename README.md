@@ -34,10 +34,13 @@ you can run postgresql_exporter as a service
 vi /etc/systemd/system/postgres_exporter.service
 ```
 
+need to daemon reload and service restart
+
+```
 sudo systemctl daemon-reload
 sudo systemctl start postgres_exporter
 sudo systemctl enable postgres_exporter
-sudo systemctl status postgres_exporter
+```
 
 ## prometheus
 
@@ -62,4 +65,12 @@ after created yml file you can run prometheys as a service like postgresql_expor
 ```
 sudo useradd -rs /bin/false prometheus
 vi /etc/systemd/system/prometheus.service
+```
+
+need to reload and restart
+
+```
+sudo systemctl daemon-reload
+sudo systemctl start prometheus
+sudo systemctl enable prometheus
 ```
