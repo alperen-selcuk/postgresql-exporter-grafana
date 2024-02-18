@@ -1,0 +1,7 @@
+# /etc/prometheus/prometheus.yml
+
+scrape_configs:
+  - job_name: 'postgresql_exporter'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['postgresqlip:9001', 'postgresqlip:9090']
