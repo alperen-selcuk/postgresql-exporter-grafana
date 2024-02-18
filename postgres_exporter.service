@@ -7,7 +7,7 @@ After=network-online.target
 Type=simple
 WorkingDirectory=/opt/postgres_exporter
 EnvironmentFile=/opt/postgres_exporter/postgres_exporter.env
-ExecStart=/usr/local/bin/postgres_exporter --web.listen-address=192.168.56.106:9100 --web.telemetry-path=/metrics
+ExecStart=/usr/local/bin/postgres_exporter --web.listen-address=postgresqlip:9100 --web.telemetry-path=/metrics
 Restart=always
 
 [Install]
