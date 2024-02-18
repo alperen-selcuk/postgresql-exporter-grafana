@@ -25,7 +25,7 @@ touch postgres_exporter.env
 type your posgres connection string
 
 ```
-echo DATA_SOURCE_NAME="postgresql://postgres:$DB_USER@#DB_IP:5432/?sslmode=disable" >> postgres_exporter.env
+echo DATA_SOURCE_NAME="postgresql://$DB_USER:$DB_PASS@#DB_IP:5432/?sslmode=disable" >> postgres_exporter.env
 ```
 
 you can run postgresql_exporter as a service
