@@ -58,3 +58,9 @@ cd /opt/prometheus
 touch prometheus.yml
 ```
 
+after created yml file you can run prometheys as a service like postgresql_exporter.
+
+```
+sudo useradd -rs /bin/false prometheus
+vi /etc/systemd/system/prometheus.service
+```
