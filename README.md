@@ -28,10 +28,9 @@ type your posgres connection string
 echo DATA_SOURCE_NAME="postgresql://postgres:$DB_USER@#DB_IP:5432/?sslmode=disable" >> postgres_exporter.env
 ```
 
-create postgres user and add system file for postgres service. file already i creates on repository.
+you can run postgresql_exporter as a service
 
 ```
-sudo useradd -rs /bin/false postgres
 vi /etc/systemd/system/postgres_exporter.service
 ```
 
